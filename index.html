@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--se agregan metadatos, refiere fuente y hoja de estilo-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--inicio del cuerpo de página -->
+    <section id="sec1">
+        <div class="contenedor-texto">
+            <h1>Trivia</h1>
+            <h1 style="font-size:50px;">Mujeres poderosas</h1>
+            <br>
+            <h3 id="subtitulo">¡Hola!</h3>
+            <!--se agrega boton de doble función, recibe el nombre y envia a otra pantalla-->
+            <input id="nombre" placeholder="Introduce tu nombre"> <button class="designButton" onclick="setNombre()">
+                <a id="aceptar" title="Click to do something" href="#sec2">Aceptar</a></button>
+        </div>
+        <!--se agregan ilustraciones que acompañan el fondo-->
+        <img id="muj1" src="http://imgfz.com/i/Bshb8Lj.png" alt="mujer">
+        <img id="muj2" src="http://imgfz.com/i/2MekyTD.png" alt="mujeres">
+    </section>
+    <!--inicio pantalla 2, donde por medio de 2 botones se elige la opcion de trivia y te envia a pantalla correspondiente-->
+    <section id="sec2">
+        <div class="contenedor-texto">
+            <h3 id="saludo">¡A divertirse</h3>
+            <br>
+            <p>Elige una Trivia</p>
+            <button onclick="triviaFrases();" name="triviaFrases" id="myLink" class="designButton"><a id="myLink"
+                    href="#sec3">Frases de mujeres emblemáticas</a></button>
+            <br>
+            <br>
+            <br>
+            <button onclick="triviaHistoria();" name="triviaHistoria" id="myLink" class="designButton"><a id="myLink"
+                    href="#sec7">Mujeres en la historia</a></button>
+        </div>
+
+    </section>
+    <!--primera pantalla de trivia op1-->
+    <section id="sec3">
+        <div class="contenedor-texto">
+            <h3><strong><u>Frases de mujeres emblemáticas</u></strong></h3>
+            <br>
+            <br>
+            <br>
+            <!--pregunta1-->
+            <div id="margin">
+                <h2 id="sec3">¿Qué mujer dijo: <i>“Debemos decirles a nuestras jóvenes que sus voces son importantes”.
+                    </i>?</h2>
+                <br>
+                <br>
+                <!--respuestas-->
+                <input onclick="resNeg1();" value="0" class="cheking" type="radio" name="resp1" id="quest1-1">
+                <p1>Greta Thunberg</p1>
+                <br>
+                <br>
+                <input onclick="resNeg1();" value="0" class="cheking" type="radio" name="resp1" id="quest1-2">
+                <p2>Emma Watson</p2>
+                <br>
+                <br>
+                <input onclick="resNeg1();" value="0" class="cheking" type="radio" name="resp1" id="quest1-3">
+                <p3>Tawakkul Karman</p3>
+                <br>
+                <br>
+                <input onclick="resPos1();" value="1" class="cheking" type="radio" name="resp1" id="quest1-4">
+                <p4>Malala Yousafzai</p4>
+                <br>
+                <br>
+                <!--boton dirige a siguiente pregunta y pantalla-->
+                <a href="#sec4" onclick="">Siguiente</a>
+            </div>
+        </div>
+
+    </section>
+    <section id="sec4">
+        <div class="contenedor-texto">
+            <div id="margin">
+                <h2 id="sec4">¿Qué mujer dijo: <i>“Me pinto a mí misma porque soy a quien mejor conozco.” </i>?</h2>
+                <br>
+                <br>
+                <input onclick="resNeg2();" value="0" class="cheking" type="radio" name="resp1" id="quest2-1">
+                <p1>Berthe Morisot</p1>
+                <br>
+                <br>
+                <input onclick="resPos2();" value="1" class="cheking" type="radio" name="resp1" id="quest2-2">
+                <p2>Frida Kahlo</p2>
+                <br>
+                <br>
+                <input onclick="resNeg2();" value="0" class="cheking" type="radio" name="resp1" id="quest2-3">
+                <p3>Clara Peeters</p3>
+                <br>
+                <br>
+                <input onclick="resNeg2();" value="0" class="cheking" type="radio" name="resp1" id="quest2-4">
+                <p4>Georgia O'keeffe</p4>
+                <br>
+                <br>
+                <a href="#sec5" onclick="">Siguiente</a>
+            </div>
+        </div>
+
+    </section>
+    <section id="sec5">
+        <div class="contenedor-texto">
+            <div id="margin">
+                <h2 id="sec5">¿Qué mujer dijo: <i>“Nada en este mundo debe ser temido… solo entendido. Ahora es el
+                        momento de comprender más, para que podamos temer menos”. </i>?</h2>
+                <br>
+                <br>
+                <input onclick="resNeg3();" value="0" class="cheking" type="radio" name="resp1" id="quest3-1">
+                <p1>Lise Meitner </p1>
+                <br>
+                <br>
+                <input onclick="resNeg3();" value="0" class="cheking" type="radio" name="resp1" id="quest3-2">
+                <p2>Elizabeth Blackburn</p2>
+                <br>
+                <br>
+                <input onclick="resPos3();" value="1" class="cheking" type="radio" name="resp1" id="quest3-3">
+                <p3>Marie Curie</p3>
+                <br>
+                <br>
+                <input onclick="resNeg3();" value="0" class="cheking" type="radio" name="resp1" id="quest3-4">
+                <p4>Ada Lovelace</p4>
+                <br>
+                <br>
+                <a href="#sec6" onclick="">Siguiente</a>
+            </div>
+        </div>
+
+    </section>
+    <section id="sec6">
+        <div class="contenedor-texto">
+            <div id="margin">
+                <h2 id="sec6">¿Qué mujer dijo: <i>“Que nada nos defina. Que nada nos sujete. Que sea la libertad nuestra
+                        propia sustancia”. </i>?</h2>
+                <br>
+                <br>
+                <input onclick="resPos4();" value="0" class="cheking" type="radio" name="resp1" id="quest4-1">
+                <p1>Simone de Beauvoir</p1>
+                <br>
+                <br>
+                <input onclick="resNeg4();" value="1" class="cheking" type="radio" name="resp1" id="quest4-2">
+                <p2>Simone Weil</p2>
+                <br>
+                <br>
+                <input onclick="resNeg4();" value="0" class="cheking" type="radio" name="resp1" id="quest4-3">
+                <p3>María Zambrano</p3>
+                <br>
+                <br>
+                <input onclick="resNeg4();" value="0" class="cheking" type="radio" name="resp1" id="quest4-4">
+                <p4>Lou Andreas Salomé</p4>
+                <br>
+                <br>
+                <a href="#sec11" onclick="comprobar();">Siguiente</a>
+            </div>
+        </div>
+
+    </section>
+    <!--primera pantalla de trivia op2-->
+    <section id="sec7">
+        <div class="contenedor-texto">
+            <h3><strong><u>Mujeres en la historia</u></strong></h3>
+            <br>
+            <br>
+            <br>
+            <div id="margin">
+                <h2 id="sec7">¿Eloisa Diaz fue la primera mujer…?</h2>
+                <br>
+                <br>
+                <input onclick="triviaResNeg1();" value="0" class="cheking" type="radio" name="resp1" id="quest5-1">
+                <p1>Poeta ganadora del premio Nobel de la Paz </p1>
+                <br>
+                <br>
+                <input onclick="triviaResNeg1();" value="0" class="cheking" type="radio" name="resp1" id="quest5-2">
+                <p2>Activista por el voto femenino</p2>
+                <br>
+                <br>
+                <input onclick="triviaResNeg1();" value="0" class="cheking" type="radio" name="resp1" id="quest5-3">
+                <p3>Destaca fílosofa feminista</p3>
+                <br>
+                <br>
+                <input onclick="triviaResPos1();" value="1" class="cheking" type="radio" name="resp1" id="quest5-4">
+                <p4>Médico de Chile y América del Sur</p4>
+                <br>
+                <br>
+                <a href="#sec8">Siguiente</a>
+            </div>
+        </div>
+
+    </section>
+    <section id="sec8">
+        <div class="contenedor-texto">
+            <div id="margin">
+                <h2 id="sec8">¿Rosalind Franklin fue parte del descubrimiento de…?</h2>
+                <br>
+                <br>
+                <input onclick="triviaResNeg2();" value="0" class="cheking" type="radio" name="resp1" id="quest6-1">
+                <p1>Agujero negro</p1>
+                <br>
+                <br>
+                <input onclick="triviaResNeg2();" value="0" class="cheking" type="radio" name="resp1" id="quest6-2">
+                <p2>Tratamiento para la fibrosis quística</p2>
+                <br>
+                <br>
+                <input onclick="triviaResPos2();" value="1" class="cheking" type="radio" name="resp1" id="quest6-3">
+                <p3>ADN</p3>
+                <br>
+                <br>
+                <input onclick="triviaResNeg2();" value="0" class="cheking" type="radio" name="resp1" id="quest6-4">
+                <p4>Anticonceptivos</p4>
+                <br>
+                <br>
+                <a href="#sec9">Siguiente</a>
+            </div>
+        </div>
+
+    </section>
+    <section id="sec9">
+        <div class="contenedor-texto">
+            <div id="margin">
+                <h2 id="sec9">¿Valentina Tereshkova fue la primera mujer…?</h2>
+                <br>
+                <br>
+                <input onclick="triviaResNeg3();" value="0" class="cheking" type="radio" name="resp1" id="quest7-1">
+                <p1>Fotógrafa</p1>
+                <br>
+                <br>
+                <input onclick="triviaResPos3();" value="1" class="cheking" type="radio" name="resp1" id="quest7-2">
+                <p2>Astronauta</p2>
+                <br>
+                <br>
+                <input onclick="triviaResNeg3();" value="0" class="cheking" type="radio" name="resp1" id="quest7-3">
+                <p3>Astrofísica</p3>
+                <br>
+                <br>
+                <input onclick="triviaResNeg3();" value="0" class="cheking" type="radio" name="resp1" id="quest7-4">
+                <p4>Cantante de ópera</p4>
+                <br>
+                <br>
+                <a href="#sec10">Siguiente</a>
+            </div>
+        </div>
+
+    </section>
+    <section id="sec10">
+        <div class="contenedor-texto">
+            <div id="margin">
+                <h2 id="sec10">¿Rigoberta Menchú luchó por…?</h2>
+                <br>
+                <br>
+                <input onclick="triviaResNeg4();" value="0" class="cheking" type="radio" name="resp1" id="quest8-1">
+                <p1>El sufragio</p1>
+                <br>
+                <br>
+                <input onclick="triviaResNeg4();" value="0" class="cheking" type="radio" name="resp1" id="quest8-1">
+                <p2>La protección de aldeas nativas</p2>
+                <br>
+                <br>
+                <input onclick="triviaResNeg4();" value="0" class="cheking" type="radio" name="resp1" id="quest8-1">
+                <p3>Los derechos de inmigrantes</p3>
+                <br>
+                <br>
+                <input onclick="triviaResPos4();" value="1" class="cheking" type="radio" name="resp1" id="quest8-1">
+                <p4>Los derechos de los indígenas</p4>
+                <br>
+                <br>
+                <a onclick="comprobar();" href="#sec11">Siguiente</a>
+            </div>
+        </div>
+
+    </section>
+    <!--ultima pantalla, da resultados-->
+    <section id="sec11">
+        <div class="contenedor-texto">
+            <h3 id="trivia1">Trivia</h3>
+            <h3 id="nombre2">tienes</h3>
+            <br>
+            <h3 id="correctas">Correctas</h3>
+            <h3 id="incorrectas">Incorrectas</h3>
+            <br>
+            <!--boton volver a jugar te lleva a sec2
+        boton salir te lleva a google-->
+            <button onclick="resetScore();" id="myLink" class="designButton"><a id="myLink" href="#sec2">¡Volver a
+                    jugar!</a></button>
+            <br>
+            <br>
+            <button id="myLink" class="designButton"><a id="myLink" href="#sec1">Salir</a></button>
+        </div>
+
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
